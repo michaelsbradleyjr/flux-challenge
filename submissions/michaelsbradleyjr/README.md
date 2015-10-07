@@ -34,15 +34,13 @@ use [homebrew-cask](http://caskroom.io/).
 brew cask install elm-platform
 ```
 
-Copy the stylesheet into place, compile the Elm source/s with
-[elm-make](https://github.com/elm-lang/elm-make), and fire up
-[Elm Reactor](https://github.com/elm-lang/elm-reactor); both tools are installed
-as part of the [Elm Platform](https://github.com/elm-lang/elm-platform).
+Copy the stylesheet into place and fire up
+[Elm Reactor](https://github.com/elm-lang/elm-reactor), which is installed as
+part of the [Elm Platform](https://github.com/elm-lang/elm-platform).
 
 ```bash
 cd flux-challenge/submissions/michaelsbradleyjr && \
    cp ../../styles.css ./ && \
-   elm-make Main.elm && \
    elm-reactor
 ```
 

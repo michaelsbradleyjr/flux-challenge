@@ -1,11 +1,4 @@
-## Run locally
-
-First [install Elm](http://elm-lang.org/install). If you're on a mac, you can
-use [homebrew-cask](http://caskroom.io/).
-
-```bash
-brew cask install elm-platform
-```
+# Run locally
 
 Clone this repository if you have not yet done so.
 
@@ -19,18 +12,40 @@ Then run the following commands in a terminal.
 cd flux-challenge/server && npm install . && npm start
 ```
 
-In another terminal, compile the source and fire up
-[Elm Reactor](https://github.com/elm-lang/elm-reactor), already installed as
-part of the Elm platform.
+Now startup a static web server in another terminal, e.g. using the
+[http-server](https://github.com/indexzero/http-server) utility.
+
+```bash
+cd flux-challenge && http-server -p 5000
+```
+
+Finally, open this submissions's
+[index.html](http://localhost:5000/submissions/michaelsbradleyjr/index.html) in
+your browser.
+
+*May the Force be with you!*
+
+# Development
+
+First [install Elm](http://elm-lang.org/install). If you're on a mac, you can
+use [homebrew-cask](http://caskroom.io/).
+
+```bash
+brew cask install elm-platform
+```
+
+Copy the stylesheet into place, compile the Elm source/s with
+[elm-make](https://github.com/elm-lang/elm-make), and fire up
+[Elm Reactor](https://github.com/elm-lang/elm-reactor); both tools are installed
+as part of the [Elm Platform](https://github.com/elm-lang/elm-platform).
 
 ```bash
 cd flux-challenge/submissions/michaelsbradleyjr && \
    cp ../../styles.css ./ && \
-   elm-make Main.elm && elm-reactor
+   elm-make Main.elm && \
+   elm-reactor
 ```
 
-Finally, open [http://localhost:8000/index.html](http://localhost:8000/index.html) in your browser.
-
-Alternatively, you can enter the Reactor's [debug environment](http://localhost:8000/Main.elm?debug).
-
-*May the Force be with you!*
+Now load [Main.elm](http://localhost:8000/Main.elm) in your browser;
+alternatively, you can enter the Reactor's
+[debug environment](http://localhost:8000/Main.elm?debug).

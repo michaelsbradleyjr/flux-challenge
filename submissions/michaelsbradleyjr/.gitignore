@@ -7,6 +7,5 @@ fuse*
 .#*
 *.swp
 
-elm.js
 elm-stuff/
 styles.css

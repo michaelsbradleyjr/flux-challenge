@@ -33,4 +33,4 @@ Finally, open [http://localhost:8000/index.html](http://localhost:8000/index.htm
 
 Alternatively, you can enter the Reactor's [debug environment](http://localhost:8000/Main.elm?debug).
 
-May the Force be with you!
+*May the Force be with you!*

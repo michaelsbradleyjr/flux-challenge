@@ -31,6 +31,6 @@ cd flux-challenge/submissions/michaelsbradleyjr && \
 
 Finally, open [http://localhost:8000/index.html](http://localhost:8000/index.html) in your browser.
 
-Alternatively, you can enter the Reactor's [debug environment](http://localhost:8000/Main.elm?debug) for this little application:
+Alternatively, you can enter the Reactor's [debug environment](http://localhost:8000/Main.elm?debug).
 
 May the Force be with you!
